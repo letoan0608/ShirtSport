@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageButton
+            android:layout_gravity="center_vertical"
+
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/bg_button"
+            android:src="@drawable/ic_menu_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginLeft="100dp"
+            android:layout_gravity="center_vertical"
+            android:text="FIFA World Cup Kits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:textColor="#999292"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="Authentic World Cup Kits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <SearchView
+
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/bg_search"
+        android:layout_width="match_parent"
+        android:id="@+id/searchView"
+        android:layout_height="wrap_content">
+
+    </SearchView>
+
+    <RelativeLayout
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/menu"
+            android:background="@drawable/bg_button"
+            android:src="@drawable/ic_toc_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/menu"
+            android:id="@+id/menu1"
+            android:background="@drawable/bg_button"
+            android:src="@drawable/ic_view_list_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:layout_marginRight="10dp"
+            android:id="@+id/filter"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_button"
+            android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <GridView
+
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:id="@+id/gridView"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:numColumns="2"
+        android:columnWidth="120dp"
+
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        </GridView>
+
+
+</LinearLayout>
